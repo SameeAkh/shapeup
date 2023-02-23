@@ -85,6 +85,10 @@ p{
 header img{
     float: left;
     margin: 0 .75em;
+    max-width: 140px;
+    min-width: 70px;
+    width: 100px;
+
 }
 
 /*
@@ -207,6 +211,7 @@ navigation menu
 }
 
 
+
 main{
     clear: left;
     padding-right: .25em;
@@ -286,8 +291,6 @@ footer{
  
 }
 
-
-
 footer p{
     font-size: 75%;
     text-align: center;
@@ -295,4 +298,39 @@ footer p{
     margin-top: 50px;
 }
 
+#mobilemenu{
+    display: none;
+}
 
+/* ========================
+            media queries 
+==========================*/
+@media only screen and (max-width: 900px) {
+    body{
+        box-shadow: none;
+        border: none;
+        font-size: 90%  ;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #nav_menu{
+        display: none;
+    }
+    #mobilemenu{
+        display: block;
+    }
+    .slicknav_menu{
+        background-color: steelblue;
+    }
+    #leftcol{
+        display: none;
+    }
+    section, aside, #rightcol{
+        float: none;
+        width: 95%;
+        margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 479px){
+    
+}
